@@ -6,10 +6,10 @@
     }
 	
 	// Collect Prizm Cloud settings from Database
-	// $licenseKey = get_option('licenseKey');
+	$licenseKey = get_option('licenseKey');
 
     // Save Prizm Cloud settings
-    /*if( isset($_POST['prizmcloud_settings_update']) && $_POST['prizmcloud_settings_update'] == 1)
+    if( isset($_POST['prizmcloud_settings_update']) && $_POST['prizmcloud_settings_update'] == 1)
 	{
 		$licenseKey = trim($_POST['licenseKey']);
 		update_option( 'licenseKey', $licenseKey);
@@ -18,7 +18,7 @@
 		?>
 		<div class="updated"><p><strong><?php _e('Settings saved!', 'menu-test' ); ?></strong></p></div>
 		<?php
-	}*/
+	}
 ?>
 <div class="wrap">
 	<div id="icon-options-general" class="icon32"><br/></div>
