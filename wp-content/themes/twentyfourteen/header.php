@@ -28,19 +28,15 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+	<SCRIPT TYPE="text/javascript">
+		$(document).ready(function(){
+			
+		});
+
+	</SCRIPT>
 </head>
 
 <body <?php body_class(); ?>>
-
-<?php 
-	$user_ID = get_current_user_id();
-  	$user_time_limit = get_user_meta($user_ID, 'user_time_limit', true);
-	$user_time_check = get_user_meta($user_ID, 'user_time_check', true);
-?>
-<input type="hidden" name="AjaxUrl" id="AjaxUrl" value="<?php echo site_url(); ?>/wp-admin/admin-ajax.php" />
-<input type="text" name="user_time_limit_field" id="user_time_limit_field" value="<?php echo $user_time_limit; ?>"/>
-<input type="text" name="user_time_check_field" id="user_time_check_field" value="<?php echo $user_time_check; ?>"/>
-
 <div id="page" class="hfeed site">
 	<?php if ( get_header_image() ) : ?>
 	<div id="site-header">
@@ -73,6 +69,5 @@
 	</header><!-- #masthead -->
 
 	<div id="main" class="site-main">
-
 
 

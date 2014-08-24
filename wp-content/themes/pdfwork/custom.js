@@ -10,6 +10,16 @@ jQuery(document).ready(function(){
 	  		}
 		}, 1000);
 
+		
+	jQuery('iframe').load( function() {
+	    // jQuery('#viewerBox').contents().find("head").append(jQuery("<style type='text/css'>  .pcc-active{display:none;}  </style>"));
+	    // console.log(jQuery('iframe').contents().find("head"));
+	});
+});
+jQuery(window).on('load', function() {
+    
+   jQuery('#viewerBox').contents().find('.pcc-icon-texttool').css("display", "none");
+
 });
 
 function postsLoad(AjxUrl){
@@ -34,7 +44,7 @@ function postsLoad(AjxUrl){
 	        	if(data.redrctUrl != 'no'){
 	        		//console.log(data.redrctUrl);
 	        		clearInterval(setchkintrval);
-	        		jQuery('.pdfviewpagewrapper').html('<label> Your session is timed out. Please contact with Admin to another session to view the PDF</label>');
+	        		jQuery('.pdfviewpagewrapper').html('<label> Your session is timed out. Please contact to Admin for a new session to view the PDF.</label>');
 	        		jQuery('.timmer').html();
 	        		setTimeout(function() { 
 	        			window.location = data.redrctUrl;

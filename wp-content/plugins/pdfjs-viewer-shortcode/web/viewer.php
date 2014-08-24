@@ -75,51 +75,6 @@ limitations under the License.
     <script type="text/javascript" src="debugger.js"></script>
     <script type="text/javascript" src="viewer.js"></script>
 
-    <script language="JavaScript1.2" type="text/javascript">
-      //The functions disableselect() and reEnable() are used to return the status of events.
-
-            function disableselect(e)
-            {
-                    return false 
-            }
-            
-            function reEnable()
-            {
-                    return true
-            }
-            
-            //if IE4 
-            // disable text selection
-            document.onselectstart=new Function ("return false")
-            
-            //if NS6
-            if (window.sidebar)
-            {
-                    //document.onmousedown=disableselect
-                    // the above line creates issues in mozilla so keep it commented.
-            
-                    document.onclick=reEnable
-            }
-            
-            function clickIE()
-            {
-                    if (document.all)
-                    {
-                            (message);
-                            return false;
-                    }
-            }
-            
-            // disable right click
-            document.oncontextmenu=new Function("return false")
-            
-    </script>
-<style type="text/css">
-body
-{
--moz-user-select: none;
-}
-</style>
   </head>
 
   <body tabindex="1">

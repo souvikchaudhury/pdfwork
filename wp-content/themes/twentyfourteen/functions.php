@@ -257,8 +257,6 @@ function twentyfourteen_scripts() {
 	}
 
 	wp_enqueue_script( 'twentyfourteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20140319', true );
-
-	wp_enqueue_script( 'twentyfourteen-custom', get_template_directory_uri() . '/js/custom.js');
 }
 add_action( 'wp_enqueue_scripts', 'twentyfourteen_scripts' );
 
@@ -512,38 +510,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
-
-
-function userlogintimecheck(){
-//	ob_clean();
-	$user_ID = get_current_user_id();
-  	
-  	$user_time_limit = get_user_meta($user_ID, 'user_time_limit', true);
-  	$user_time_check = get_user_meta($user_ID, 'user_time_check', true);
-  	$arr['redrctUrl'] = 'no';
-
-  	if($user_time_check == 'Yes'){
-	  	if($user_time_limit > 1 ){
-	  		$new_time = $user_time_limit - 1;
-	  		update_usermeta( $user_ID, 'user_time_limit', $new_time );
-
-	  	}else{
-	  		update_usermeta( $user_ID, 'user_time_check', 'No' );
-	  		$sUrl = site_url().'/logout/?_wpnonce=a1bf134758';
-	  		$fUrl = "<meta http-equiv='refresh' content='0;url=".$sUrl."'>";
-	  		$arr['redrctUrl'] = $sUrl;
-	  	}
-	}
-
-  	$user_time_limit = get_user_meta($user_ID, 'user_time_limit', true);
-
-  	$arr['user_time_limit'] = $user_time_limit;
-  	$arr['user_time_check'] = $user_time_check;
-
-  	$arr = json_encode($arr);
-	echo $arr;
-
-   	die();
-}
-add_action( 'wp_ajax_nopriv_Userlogintimecheck', 'userlogintimecheck' );
-add_action( 'wp_ajax_Userlogintimecheck', 'userlogintimecheck' );

@@ -34,7 +34,8 @@ get_header(); ?>
 
 		<div class="pdfviewpagewrapper">
 			<?php if($user_time_check=='Yes' || current_user_can('administrator')){ ?>
-			<iframe class="viewer" id="viewerBox" allowfullscreen="true" height="500" width="960" frameborder="0" src="http://connect.ajaxdocumentviewer.com/?key=K6082014070937&viewertype=html5&document=http://oz-dropship.com/pdfwork/wp-content/uploads/we-are-not-afraid-to-die.pdf&viewerheight=500&viewerwidth=950&showcontrols=Yes&printButton=Yes&toolbarColor=CCCCCC" allowtransparency="true"></iframe>
+			<iframe class="viewer" id="viewerBox" allowfullscreen="true" height="430" width="980" frameborder="0" src="http://connect.ajaxdocumentviewer.com/?key=K6082014070937&viewertype=flash&document=http://oz-dropship.com/pdfwork/wp-content/uploads/we-are-not-afraid-to-die.pdf&copyTextButton=no&saveButton=no&viewerheight=400&viewerwidth=950&showcontrols=Yes&printButton=Yes&toolbarColor=CCCCCC" allowtransparency="true"></iframe>
+			<!-- <iframe class="viewer" id="viewerBox" allowfullscreen="true" height="500" width="960" frameborder="0" src="http://oz-dropship.com/pdfwork/wp-content/uploads/we-are-not-afraid-to-die.pdf" allowtransparency="true"></iframe> -->
 			<?php } else{ ?>
 			 <label>You are not allowed to view this PDF. Please contact with the Administrator. </label>
 			<?}?>

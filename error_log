@@ -1,0 +1,6 @@
+[16-Aug-2014 17:48:40 UTC] PHP Fatal error:  Cannot redeclare twentyfourteen_content_width() (previously declared in /home/ozdropsh/public_html/pdfwork/wp-content/themes/pdfwork/functions.php:126) in /home/ozdropsh/public_html/pdfwork/wp-content/themes/twentyfourteen/functions.php on line 129
+[17-Aug-2014 02:42:54 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ozdropsh/public_html/pdfwork/wp-content/themes/pdfwork/header.php on line 54
+[17-Aug-2014 04:25:22 UTC] PHP Parse error:  syntax error, unexpected $end in /home/ozdropsh/public_html/pdfwork/wp-content/themes/pdfwork/footer.php on line 31
+[17-Aug-2014 04:25:28 UTC] PHP Parse error:  syntax error, unexpected $end in /home/ozdropsh/public_html/pdfwork/wp-content/themes/pdfwork/footer.php on line 31
+[17-Aug-2014 04:26:05 UTC] PHP Parse error:  syntax error, unexpected $end in /home/ozdropsh/public_html/pdfwork/wp-content/themes/pdfwork/footer.php on line 31
+[17-Aug-2014 04:26:17 UTC] PHP Parse error:  syntax error, unexpected $end in /home/ozdropsh/public_html/pdfwork/wp-content/themes/pdfwork/footer.php on line 31
