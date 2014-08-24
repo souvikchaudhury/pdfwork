@@ -1,24 +1,14 @@
-jQuery(document).ready(function(){
 
-	var AjxUrl = jQuery('#AjaxUrl').val();
-	var user_time_check_field = jQuery('#user_time_check_field').val();
+jQuery(window).load(function() {
+   
+   var AjxUrl = jQuery('#AjaxUrl').val();
+   var user_time_check_field = jQuery('#user_time_check_field').val();
 
-	
-		setchkintrval = setInterval(function() {
+   setchkintrval = setInterval(function() {
 			if(user_time_check_field == 'Yes'){
 	    		postsLoad(AjxUrl);
 	  		}
 		}, 1000);
-
-		
-	jQuery('iframe').load( function() {
-	    // jQuery('#viewerBox').contents().find("head").append(jQuery("<style type='text/css'>  .pcc-active{display:none;}  </style>"));
-	    // console.log(jQuery('iframe').contents().find("head"));
-	});
-});
-jQuery(window).on('load', function() {
-    
-   jQuery('#viewerBox').contents().find('.pcc-icon-texttool').css("display", "none");
 
 });
 

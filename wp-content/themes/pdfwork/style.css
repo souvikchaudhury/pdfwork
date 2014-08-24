@@ -167,7 +167,10 @@ body{
 .submit{
 	text-align: center;
 }
-.submit input[type=submit]{
+.plogout{
+    float: right;
+}
+.submit input[type=submit],.plogout{
     background: #007eff;
     border:none;
     color: #fff;

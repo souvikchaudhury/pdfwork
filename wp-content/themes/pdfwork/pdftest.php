@@ -38,7 +38,7 @@ get_header(); ?>
 			<!-- <iframe class="viewer" id="viewerBox" allowfullscreen="true" height="500" width="960" frameborder="0" src="http://oz-dropship.com/pdfwork/wp-content/uploads/we-are-not-afraid-to-die.pdf" allowtransparency="true"></iframe> -->
 			<?php } else{ ?>
 			 <label>You are not allowed to view this PDF. Please contact with the Administrator. </label>
-			<?}?>
+			<?php }?>
 		</div>
 		<!-- <iframe src="http://oz-dropship.com/" width="960" height="500"></iframe> -->
 	</div>
@@ -49,3 +49,4 @@ get_header(); ?>
 //get_sidebar();
 get_footer();
 
+?>

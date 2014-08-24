@@ -54,8 +54,9 @@
 <?php if ( is_page('pdf-page') ||  is_page('your-profile')) { ?>
 	<div class="customHeader">
 		<div class="innerPage">
-    	<img src="<?php echo get_bloginfo( 'stylesheet_directory' ) ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" width="100" height="100">
-    </div>
+    		<img src="<?php echo get_bloginfo( 'stylesheet_directory' ) ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" width="100" height="100">
+    		<a href="<?php echo wp_logout_url(); ?>" class="plogout"> Log Out </a>
+    	</div>
 	</div>
 <?php } else { ?>
     
